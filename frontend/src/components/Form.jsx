@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Form = () => {
 
-  const url = "http://localhost:8000";
+  const url = "http://dss24.onrender.com";
   const [registrationType, setRegistrationType] = useState('solo');
   const [data, setData] = useState({
     name: "",
