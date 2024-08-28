@@ -1,0 +1,22 @@
+
+.form {
+    max-width: 40vw;
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 1px solid black;
+    padding: 20px 100px;
+}
+
+.form label {
+    margin: 5px 0;
+    display: block;
+}
+.form input {
+    margin: 5px 0;
+    /* border: none; */
+}
+
+.submit-btn {
+    margin: 20px 0;
+    display: block;
+}
