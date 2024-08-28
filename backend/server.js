@@ -9,12 +9,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-app.use(cors({
-    origin: 'http://localhost:5173',
-    methods: 'GET,POST,PUT,DELETE',
-    optionSuccessStatus:200,
-    credentials: true
-}));
+app.use(cors());
 
 app.use(express.json()); //The json response from FE to BE is parsed using this
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded form data
