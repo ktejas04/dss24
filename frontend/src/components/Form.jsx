@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const Form = () => {
 
-  const url = "http://dss24.onrender.com";
+  const url = "https://dss24.onrender.com";
   const [registrationType, setRegistrationType] = useState('solo');
   const [data, setData] = useState({
     name: "",

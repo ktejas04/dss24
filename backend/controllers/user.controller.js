@@ -2,7 +2,7 @@ import User from '../models/user.models.js';
 import validator from 'validator';
 
 const registerUser = async (req, res) => {
-    const { isTeam, name, email, phone, college, teamName, teamCollege, members } = req.body;
+    const { isTeam, name, email, phone, college, teamName, teamCollege, members, eventName } = req.body;
 
     try {
         // Validation for solo registration
@@ -105,6 +105,7 @@ const registerUser = async (req, res) => {
             teamName: isTeam ? teamName : undefined,
             teamCollege: isTeam ? teamCollege : undefined,
             members: isTeam ? members : [],
+            eventName
         });
 
         // Only set the email field for solo registrations

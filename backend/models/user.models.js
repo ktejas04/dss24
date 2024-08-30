@@ -26,6 +26,10 @@ const userSchema = new Schema({
     college: String, 
     teamName: String,
     teamCollege: String, 
+    eventName: {
+        type: String,
+        required: true
+    },
     members: [memberSchema] 
 }, {
     timestamps: true,
